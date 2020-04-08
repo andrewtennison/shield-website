@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Bringing independent PPE campaigns together
-image: /img/home-jumbotron.jpg
+image: /img/5929214-avatar-doctor-health-hospital-man-medical.png
 heading: Bringing independent PPE campaigns together
 subheading: SHIELD has emerged as a best-practice collaboration of independent
   PPE campaigns, thought leaders and industry experts.
