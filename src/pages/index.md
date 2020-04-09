@@ -2,9 +2,11 @@
 templateKey: index-page
 title: Bringing independent PPE campaigns together
 image: /img/new-logo3.png
-heading: Bringing independent PPE campaigns together
-subheading: A best-practice collaboration of independent UK PPE campaigns,
-  thought leaders and industry experts.
+heading: A collaboration of independent UK PPE campaigns, thought leaders and
+  industry experts sharing best-practices
+subheading: SHIELD members are united in their critical missions to provide NHS
+  and care workers with the vital PPE that they require to do their job safely,
+  in the midst of the COVID-19 crisis.
 mainpitch:
   title: Why Kaldi
   description: >
@@ -63,8 +65,6 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
-description: SHIELD members are united in their critical missions to provide NHS
-  and care workers with the vital PPE that they require to do their job safely,
-  in the midst of the COVID-19 crisis. Please visit the campaign sites for more
-  information on how we are each working to support our health professionals.
+description: Please visit the campaign sites for more information on how we are
+  each working to support our health professionals.
 ---
