@@ -1,12 +1,12 @@
 ---
 templateKey: member-page
-title: Member title
-date: 2016-12-17T15:04:10.000Z
-memberlogo: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+title: Women in 3D printing
+date: "2016-12-17T15:04:10.000Z"
+description: ...
 tags:
-  - flavor
-  - tasting
+  - 3Dprinting
+memberlogo: /img/women-in-print.png
+website: https://womenin3dprinting.com/
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
