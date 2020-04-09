@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Shield - Bringing independent PPE campaigns together',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'SHIELD has emerged as a best-practice collaboration of independent PPE campaigns, thought leaders and industry experts.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
