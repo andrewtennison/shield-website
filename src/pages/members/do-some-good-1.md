@@ -1,10 +1,10 @@
 ---
 templateKey: member-page
-title: do some good
+title: Helpful engineering
 date: "2020-04-09T08:57:43.056Z"
 description: ...
 tags:
   - PPE
-memberlogo: /img/do-some-good.png
-website: https://do-some-good.co.uk/
+memberlogo: /img/helpful-engineering.png
+website: https://www.linkedin.com/company/helpfulengineering
 ---
