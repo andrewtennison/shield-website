@@ -12,6 +12,20 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "members"
+    label: "members"
+    folder: "src/pages/members"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "member-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Added Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Logo", name: "memberlogo", widget: image}
+      - {label: "Website", name: "website", widget: string}
+
   # - name: "blog"
   #   label: "Blog"
   #   folder: "src/pages/blog"

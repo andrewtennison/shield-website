@@ -4,7 +4,7 @@ import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import MemberList from '../components/MemberList'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const IndexPageTemplate = ({
@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div className="container"><div class="section">
+    <div class="section"><div className="container">
 
       {/* Left col */}
       <div className="columns">
@@ -32,13 +32,16 @@ export const IndexPageTemplate = ({
         </div>
       
         {/* Right col */}
-        <div className="column is-4 is-2-mobile">
+        <div className="column is-4 is-2-mobile is-hidden-mobile">
           <PreviewCompatibleImage imageInfo={image} />
         </div>
       </div></div></div>
 
       <section className="section partners">
-        <div className="container"></div>
+        <div className="container">
+          <h2 className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Member List</h2>
+          <MemberList />
+        </div>
       </section>
         
     {/* <section className="section section--gradient">
