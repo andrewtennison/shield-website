@@ -21,7 +21,7 @@ export const IndexPageTemplate = ({
 
       {/* Left col */}
       <div className="columns">
-        <div className="column is-6 is-offset-1">
+        <div className="column is-8">
           <h1 className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen h1">
             {heading}
           </h1>
@@ -32,26 +32,22 @@ export const IndexPageTemplate = ({
         </div>
       
         {/* Right col */}
-        <div className="column is-3">
+        <div className="column is-4 is-2-mobile">
           <PreviewCompatibleImage imageInfo={image} />
         </div>
       </div></div></div>
+
+      <section className="section partners">
+        <div className="container"></div>
+      </section>
         
-    <section className="section section--gradient">
+    {/* <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                {/* <Features gridItems={intro.blurbs} /> */}
+                <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -75,7 +71,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
   </div>
 )
 
