@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Bringing independent PPE campaigns together
-image: /img/5929214-avatar-doctor-health-hospital-man-medical.png
+image: /img/new-logo3.png
 heading: Bringing independent PPE campaigns together
 subheading: A best-practice collaboration of independent UK PPE campaigns,
   thought leaders and industry experts.
