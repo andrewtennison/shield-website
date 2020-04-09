@@ -9,10 +9,10 @@ class MemberList extends React.Component {
     const { edges: members } = data.allMarkdownRemark
 
     return (
-      <div className="columns is-multiline">
+      <div className="columns is-multiline is-vcentered is-mobile">
         {members &&
           members.map(({ node: member }) => (
-            <div className="column" key={member.id}>
+            <div className="column is-half-mobile is-one-quarter-tablet is-2-desktop" key={member.id}>
                 {member.frontmatter.memberlogo ? (
                 <div className="featured-thumbnail" style={{maxWidth: '300px'}}>
                     <PreviewCompatibleImage
