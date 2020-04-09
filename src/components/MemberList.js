@@ -1,30 +1,48 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class MemberList extends React.Component {
+
+  memberBlock(member) {
+    const website = (member.frontmatter.website && member.frontmatter.website.includes('www'));
+
+    if(!member.frontmatter.memberlogo) return null;
+    const image  = (
+      <span>
+        <PreviewCompatibleImage imageInfo={{ image: member.frontmatter.memberlogo, alt: `featured image thumbnail for member ${member.frontmatter.title}` }}/>
+      </span>
+    )
+
+    return (
+      <div className="column is-half-mobile is-one-quarter-tablet is-2-desktop" key={member.id}>
+        <div className="featured-thumbnail" style={{maxWidth: '300px'}}>
+          { website 
+            ? <a href={member.frontmatter.website} target="_blank" rel="noopener noreferrer">{image}</a>
+            : <span>{image}</span>
+          }
+        </div>
+      </div>
+    )
+  }
+
   render() {
     const { data } = this.props
     const { edges: members } = data.allMarkdownRemark
 
+    console.log('members', members)
+
+    const sortedMembers = members.sort((a,b) => {
+      console.log(new Date(a.node.frontmatter.date), new Date(b.node.frontmatter.date))
+      return (new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date))
+    })
+
+    console.log('sortedMembers', sortedMembers)
+
     return (
       <div className="columns is-multiline is-vcentered is-mobile">
-        {members &&
-          members.map(({ node: member }) => (
-            <div className="column is-half-mobile is-one-quarter-tablet is-2-desktop" key={member.id}>
-                {member.frontmatter.memberlogo ? (
-                <div className="featured-thumbnail" style={{maxWidth: '300px'}}>
-                    <PreviewCompatibleImage
-                    imageInfo={{
-                        image: member.frontmatter.memberlogo,
-                        alt: `featured image thumbnail for member ${member.frontmatter.title}`,
-                    }}
-                    />
-                </div>
-                ) : null}
-            </div>
-          ))}
+        {members && members.map(({ node: member }) => this.memberBlock(member))}
       </div>
     )
   }
@@ -55,7 +73,8 @@ export default () => (
               frontmatter {
                 title
                 templateKey
-                date(formatString: "MMMM DD, YYYY")
+                date
+                website
                 memberlogo {
                   childImageSharp {
                     fluid(maxWidth: 300, quality: 100) {
