@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div class="section"><div className="container">
+    <div class="section intro"><div className="container">
 
       {/* Left col */}
       <div className="columns">
