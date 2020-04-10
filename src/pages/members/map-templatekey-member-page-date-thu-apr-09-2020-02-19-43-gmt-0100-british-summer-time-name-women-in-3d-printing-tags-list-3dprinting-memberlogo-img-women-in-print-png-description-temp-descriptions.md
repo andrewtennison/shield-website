@@ -1,5 +1,5 @@
 ---
-memberlogo: /img/hta.png
+memberlogo: /img/theindustryprint.png
 memberLogo: /img/women-in-print.png
 templateKey: member-page
 name: Women in 3D printing
