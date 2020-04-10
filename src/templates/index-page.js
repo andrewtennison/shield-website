@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
 
       <section className="section partners">
         <div className="container">
-          <h2 className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Member List</h2>
+          <h2 className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Members</h2>
           <MemberList />
         </div>
       </section>
