@@ -1,6 +1,7 @@
 ---
 templateKey: index-page
-title: Bringing independent PPE campaigns together
+title: A collaboration of independent UK PPE campaigns, thought leaders and
+  industry experts.
 image: /img/new-logo3.png
 heading: A collaboration of independent UK PPE campaigns, thought leaders and
   industry experts
