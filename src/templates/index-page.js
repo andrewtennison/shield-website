@@ -29,6 +29,8 @@ export const IndexPageTemplate = ({
             {subheading}
           </h2>
           <p>{description}</p>
+          {/* <br />
+          <a href="#members-list" className="button is-link">See members</a> */}
         </div>
       
         {/* Right col */}
@@ -39,7 +41,7 @@ export const IndexPageTemplate = ({
 
       <section className="section partners">
         <div className="container">
-          <h2 className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Member List</h2>
+          <h2 id="members-list" className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Member List</h2>
           <MemberList />
         </div>
       </section>
