@@ -6,5 +6,5 @@ description: ...
 tags:
   - PPE
 memberlogo: /img/makerversity.png
-website: https://makerversity.org/about/
+website: https://www.makerversity.org/about/
 ---
