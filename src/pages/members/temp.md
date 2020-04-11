@@ -6,7 +6,7 @@ description: ...
 tags:
   - 3Dprinting
 memberlogo: /img/women-in-print.png
-website: https://womenin3dprinting.com/covid-19-3d-printing-responses/
+website: https://www.womenin3dprinting.com/covid-19-3d-printing-responses/
 ---
 ![flavor wheel](/img/flavor_wheel.jpg)
 
