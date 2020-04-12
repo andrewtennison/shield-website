@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import MemberList from '../components/MemberList'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import NewsRoll from '../components/NewsRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -13,7 +13,8 @@ export const IndexPageTemplate = ({
   subheading,
   description,
   showDonateLink,
-  donateUrl
+  donateUrl,
+  showNews,
 }) => (
   <div>
     <div class="section intro"><div className="container">
@@ -42,44 +43,34 @@ export const IndexPageTemplate = ({
         </div>
       </div></div></div>
 
-      <section className="section partners">
-        <div className="container">
-          <h2 id="members-list" className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Members</h2>
-          <MemberList />
-        </div>
-      </section>
-        
-    {/* <section className="section section--gradient">
+    <section className="section section-partners">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
+        <h2 id="members-list" className="is-size-3" style={{color: '#fff', paddingBottom:'10px', fontWeight: 'bold'}}>Members</h2>
+        <MemberList />
+      </div>
+    </section>
+    
+    { showNews && 
+    <section className="section section-news">
+      <div className="container">
+        
+        <div className="columns">
+          <div className="column is-12">
+            <h3 className="has-text-weight-semibold is-size-3" style={{paddingBottom: '20px'}}>
+              Latest news and updates
+            </h3>
+            <NewsRoll />
+            <div className="has-text-centered">
+              <Link className="button" to="/news">
+                See all news
+              </Link>
             </div>
           </div>
         </div>
+        
       </div>
-    </section> */}
+    </section>
+    }
   </div>
 )
 
@@ -91,10 +82,7 @@ IndexPageTemplate.propTypes = {
   description: PropTypes.string,
   showDonateLink: PropTypes.bool,
   donateUrl: PropTypes.string,
-
-  // intro: PropTypes.shape({
-  //   blurbs: PropTypes.array,
-  // }),
+  showNews: PropTypes.bool,
 }
 
 const IndexPage = ({ data }) => {
@@ -110,6 +98,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         showDonateLink={frontmatter.showDonateLink}
         donateUrl={frontmatter.donateUrl}
+        showNews={frontmatter.showNews}
       />
     </Layout>
   )
@@ -142,6 +131,7 @@ export const pageQuery = graphql`
         description
         showDonateLink
         donateUrl
+        showNews
       }
     }
   }

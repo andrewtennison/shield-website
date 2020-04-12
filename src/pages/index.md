@@ -10,6 +10,7 @@ subheading: SHIELD members are united in their critical missions to provide NHS
   in the midst of the COVID-19 crisis.
 showDonateLink: true
 donateUrl: https://test.com
+showNews: true
 mainpitch:
   title: Why Kaldi
   description: >

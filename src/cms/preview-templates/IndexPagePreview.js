@@ -15,6 +15,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         description={data.description}
         showDonateLink={data.showDonateLink}
         donateUrl={data.donateUrl}
+        showNews={data.showNews}
       />
     )
   } else {
