@@ -42,8 +42,9 @@ export default class Index extends React.Component {
               <div class="column is-4">
                 <div className="content">
                   <h1>Contact us</h1>
-                  <p>The website will be getting updated frequently with latest information.</p>
-                  <p>If you represent and organisation and would like to join our members please drop us some information about yourself and we will be in contact.</p>
+                  <p>In the first instance, please contact individual campaigns directly via the provide web links.</p>
+                  <p>This website will be getting updated frequently with the latest information.</p>
+                  <p>If you or your organisation would like to join the effort, please fill in your details and we will be in contact.</p>
                 </div>
               </div>
               <div class="column is-8">
@@ -68,7 +69,7 @@ export default class Index extends React.Component {
 
                   <div className="field">
                     <label className="label" htmlFor={'supply'}>
-                      Supply of
+                      Supply of <span style={{fontWeight: 'normal'}}>(if required)</span>
                     </label>
                     <div className="control">
                       <div className="select">
@@ -77,6 +78,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'supply'}
                       >
+                        <option value={''}>Please select an option</option>
                         <option value={'ppe_supplies'}>PPE supplies</option>
                         <option value={'medical_devices'}>Medical devices / parts (eg valves)</option>
                         <option value={'equipment'}>Equipment (ventilators / ovens)</option>
@@ -90,7 +92,7 @@ export default class Index extends React.Component {
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={'request'}>
-                      Your request for
+                      Your request for <span style={{fontWeight: 'normal'}}>(if required)</span>
                     </label>
                     <div className="control">
                       <div className="select">
@@ -99,8 +101,9 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'request'}
                       >
-                        <option value={'volunteers'}>Volunteers including Design / Production / Logistics / IT / Financial Accounting</option>
-                        <option value={'expertise'}>Pro-bono Expertise (Legal/Professional etc)</option>
+                        <option value={''}>Please select an option</option>
+                        <option value={'volunteers'}>Volunteers (eg Design / Logistics / IT / Accounting)</option>
+                        <option value={'expertise'}>Pro-bono Expertise (eg Legal / Professional)</option>
                         <option value={'supplies'}>Real Estate / Money / Equipment</option>
 
                         <option value={'medical_devices'}>Medical devices / parts (eg valves)</option>
@@ -162,7 +165,7 @@ export default class Index extends React.Component {
 
                   <div className="field">
                     <label className="label" htmlFor={'organisation'}>
-                      Organisation name
+                      Organisation name <span style={{fontWeight: 'normal'}}>(if required)</span>
                     </label>
                     <div className="control">
                       <input
