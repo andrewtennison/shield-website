@@ -63,6 +63,57 @@ export default class Index extends React.Component {
                       <input name="bot-field" onChange={this.handleChange} />
                     </label>
                   </div>
+
+                  <h2 className="title is-3">Is your enquiry regarding</h2>
+
+                  <div className="field">
+                    <label className="label" htmlFor={'supply'}>
+                      Supply of
+                    </label>
+                    <div className="control">
+                      <div className="select">
+                      <select 
+                        name={'supply'}
+                        onChange={this.handleChange}
+                        id={'supply'}
+                      >
+                        <option value={'ppe_supplies'}>PPE supplies</option>
+                        <option value={'medical_devices'}>Medical devices / parts (eg valves)</option>
+                        <option value={'equipment'}>Equipment (ventilators / ovens)</option>
+                        <option value={'food'}>Food</option>
+                        <option value={'volunteers'}>Time / Volunteers</option>
+                        <option value={'funding'}>Funding / Money</option>
+                        <option value={'expertise'}>Pro-bono Expertise (design/legal/professional etc)</option>
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="field">
+                    <label className="label" htmlFor={'request'}>
+                      Your request for
+                    </label>
+                    <div className="control">
+                      <div className="select">
+                      <select 
+                        name={'request'}
+                        onChange={this.handleChange}
+                        id={'request'}
+                      >
+                        <option value={'volunteers'}>Volunteers including Design / Production / Logistics / IT / Financial Accounting</option>
+                        <option value={'expertise'}>Pro-bono Expertise (Legal/Professional etc)</option>
+                        <option value={'supplies'}>Real Estate / Money / Equipment</option>
+
+                        <option value={'medical_devices'}>Medical devices / parts (eg valves)</option>
+                        <option value={'equipment'}>Equipment (ventilators / ovens)</option>
+                        <option value={'food'}>Food</option>
+                        <option value={'funding'}>Funding / Money</option>
+                      </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr />
+
                   <div className="field">
                     <label className="label" htmlFor={'name'}>
                       Your name
@@ -108,6 +159,7 @@ export default class Index extends React.Component {
                       />
                     </div>
                   </div>
+
                   <div className="field">
                     <label className="label" htmlFor={'organisation'}>
                       Organisation name
