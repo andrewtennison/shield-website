@@ -6,5 +6,5 @@ description: ...
 tags:
   - PPE
 memberlogo: /img/helpful-engineering.png
-website: http//www.helpfulengineering.org
+website: https://www.helpfulengineering.org
 ---
