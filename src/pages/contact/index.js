@@ -42,8 +42,8 @@ export default class Index extends React.Component {
               <div class="column is-4">
                 <div className="content">
                   <h1>Contact us</h1>
-                  <p>In the first instance, please contact individual campaigns directly via the provide web links.</p>
-                  <p>This website will be getting updated frequently with the latest information.</p>
+                  <p>In the first instance, please contact individual campaigns directly via the provided web links.</p>
+                  <p>This website will be getting updated frequently with the latest information, so please check regularly.</p>
                   <p>If you or your organisation would like to join the effort, please fill in your details and we will be in contact.</p>
                 </div>
               </div>
@@ -86,6 +86,7 @@ export default class Index extends React.Component {
                         <option value={'volunteers'}>Time / Volunteers</option>
                         <option value={'funding'}>Funding / Money</option>
                         <option value={'expertise'}>Pro-bono Expertise (design/legal/professional etc)</option>
+                        <option value={'other'}>Other</option>
                       </select>
                       </div>
                     </div>
@@ -110,6 +111,7 @@ export default class Index extends React.Component {
                         <option value={'equipment'}>Equipment (ventilators / ovens)</option>
                         <option value={'food'}>Food</option>
                         <option value={'funding'}>Funding / Money</option>
+                        <option value={'other'}>Other</option>
                       </select>
                       </div>
                     </div>
@@ -165,7 +167,7 @@ export default class Index extends React.Component {
 
                   <div className="field">
                     <label className="label" htmlFor={'organisation'}>
-                      Organisation name <span style={{fontWeight: 'normal'}}>(if required)</span>
+                      Organisation name <span style={{fontWeight: 'normal'}}>(if applicable)</span>
                     </label>
                     <div className="control">
                       <input
