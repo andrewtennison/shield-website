@@ -5,6 +5,16 @@ module.exports = {
       'SHIELD has emerged as a best-practice collaboration of independent PPE campaigns, thought leaders and industry experts.',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-163403029-1",
+        head: true,
+        anonymize: true,
+        respectDNT: true,
+        pageTransitionDelay: 0,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
