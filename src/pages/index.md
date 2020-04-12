@@ -8,6 +8,8 @@ heading: A collaboration of independent UK PPE campaigns, thought leaders and
 subheading: SHIELD members are united in their critical missions to provide NHS
   and care workers with the vital PPE that they require to do their job safely,
   in the midst of the COVID-19 crisis.
+showDonateLink: true
+donateUrl: https://test.com
 mainpitch:
   title: Why Kaldi
   description: >

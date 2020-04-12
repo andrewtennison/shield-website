@@ -54,6 +54,9 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
           - {label: Description, name: description, widget: string}
+          - {label: Show donation button, name: showDonateLink, widget: boolean}
+          - {label: Donation URL, name: donateUrl, widget: string}
+          
       # - file: "src/pages/about/index.md"
       #   label: "About"
       #   name: "about"

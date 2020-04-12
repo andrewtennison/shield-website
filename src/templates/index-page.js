@@ -9,12 +9,11 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const IndexPageTemplate = ({
   image,
-  title,
   heading,
   subheading,
-  mainpitch,
   description,
-  intro,
+  showDonateLink,
+  donateUrl
 }) => (
   <div>
     <div class="section intro"><div className="container">
@@ -29,8 +28,12 @@ export const IndexPageTemplate = ({
             {subheading}
           </h2>
           <p>{description}</p>
-          {/* <br />
-          <a href="#members-list" className="button is-link">See members</a> */}
+          { (showDonateLink && donateUrl) && 
+            <div>
+              <br />
+              <a className="button is-info" style={{backgroundColor: '#AD29B6'}} href={donateUrl}>Donate with JustGiving</a>
+            </div>
+          }
         </div>
       
         {/* Right col */}
@@ -86,6 +89,9 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   description: PropTypes.string,
+  showDonateLink: PropTypes.bool,
+  donateUrl: PropTypes.string,
+
   // intro: PropTypes.shape({
   //   blurbs: PropTypes.array,
   // }),
@@ -102,8 +108,8 @@ const IndexPage = ({ data }) => {
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
         description={frontmatter.description}
-        // mainpitch={frontmatter.mainpitch}
-        // intro={frontmatter.intro}
+        showDonateLink={frontmatter.showDonateLink}
+        donateUrl={frontmatter.donateUrl}
       />
     </Layout>
   )
@@ -134,6 +140,8 @@ export const pageQuery = graphql`
         heading
         subheading
         description
+        showDonateLink
+        donateUrl
       }
     }
   }
