@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 class MemberList extends React.Component {
 
@@ -19,12 +20,13 @@ class MemberList extends React.Component {
       <div className="column is-half-mobile is-one-quarter-tablet is-2-desktop" key={member.id}>
         <div className="featured-thumbnail" style={{maxWidth: '300px'}}>
           { website 
-            ? <a href={member.frontmatter.website} target="_blank" rel="noopener noreferrer">{image}</a>
+            
+            ? <OutboundLink href={member.frontmatter.website} target="_blank" rel="noopener noreferrer">{image}</OutboundLink>
             : <span>{image}</span>
           }
         </div>
       </div>
-    )
+    ) 
   }
 
   render() {
