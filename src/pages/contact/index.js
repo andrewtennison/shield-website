@@ -79,6 +79,21 @@ export default class Index extends React.Component {
                     </div>
                   </div>
                   <div className="field">
+                    <label className="label" htmlFor={'phone'}>
+                      Phone number
+                    </label>
+                    <div className="control">
+                      <input
+                        className="input"
+                        type={'tel'}
+                        name={'phone'}
+                        onChange={this.handleChange}
+                        id={'phone'}
+                        required={true}
+                      />
+                    </div>
+                  </div>                  
+                  <div className="field">
                     <label className="label" htmlFor={'email'}>
                       Email
                     </label>
@@ -93,6 +108,35 @@ export default class Index extends React.Component {
                       />
                     </div>
                   </div>
+                  <div className="field">
+                    <label className="label" htmlFor={'organisation'}>
+                      Organisation name
+                    </label>
+                    <div className="control">
+                      <input
+                        className="input"
+                        type={'text'}
+                        name={'name'}
+                        onChange={this.handleChange}
+                        id={'organisation'}
+                      />
+                    </div>
+                  </div>
+                  <div className="field">
+                    <label className="label" htmlFor={'location'}>
+                      Location
+                    </label>
+                    <div className="control">
+                      <input
+                        className="input"
+                        type={'text'}
+                        name={'location'}
+                        onChange={this.handleChange}
+                        id={'location'}
+                      />
+                    </div>
+                  </div>
+
                   <div className="field">
                     <label className="label" htmlFor={'message'}>
                       Message

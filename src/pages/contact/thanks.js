@@ -7,9 +7,9 @@ export default () => (
       <div className="container">
         <div className="columns is-centered">
           <div className="column is-half">
-            <div className="content" style={{textAlign: 'center'}}>
+            <div className="content" style={{textAlign: 'center', paddingBottom: '200px'}}>
               <h1>Thank you!</h1>
-              <p>This is a custom thank you page for form submissions</p>
+              <p>We have recieved your message and will get back to you ASAP.</p>
             </div>
           </div>
         </div>
