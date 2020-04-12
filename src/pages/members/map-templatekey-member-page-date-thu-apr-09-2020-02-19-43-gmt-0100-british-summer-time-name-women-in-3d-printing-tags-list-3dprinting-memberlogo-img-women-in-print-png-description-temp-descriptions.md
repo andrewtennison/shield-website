@@ -8,5 +8,5 @@ tags:
 memberlogo: /img/theindustryprint.png
 memberLogo: /img/women-in-print.png
 name: Women in 3D printing
-website: https://www.hta.co.uk/
+website: http://www.theindustryprints.co.uk
 ---
