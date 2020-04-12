@@ -1,15 +1,12 @@
 ---
 templateKey: index-page
-title: A collaboration of independent UK PPE campaigns, thought leaders and
-  industry experts.
-image: /img/new-logo3.png
 heading: A collaboration of independent UK PPE campaigns, thought leaders and
   industry experts
 subheading: SHIELD members are united in their critical missions to provide NHS
   and care workers with the vital PPE that they require to do their job safely,
   in the midst of the COVID-19 crisis.
 showDonateLink: true
-donateUrl: https://test.com
+donateUrl: https://www.justgiving.com/crowdfunding/shield-project
 mainpitch:
   title: Why Kaldi
   description: >
@@ -52,6 +49,8 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+title: A collaboration of independent UK PPE campaigns, thought leaders and
+  industry experts.
 main:
   heading: Great coffee with no compromises
   description: >
@@ -68,6 +67,7 @@ main:
   image3:
     alt: Coffee beans
     image: /img/products-grid1.jpg
+image: /img/new-logo3.png
 description: Please visit the campaign sites for more information on how we are
   each working to support our health professionals.
 ---
