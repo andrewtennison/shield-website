@@ -2,15 +2,16 @@ import React from 'react'
 
 import Layout from '../../components/Layout'
 import NewsRoll from '../../components/NewsRoll'
+// import banner from '../img/banner/n95-mask.jpg'
 
 export default class NewsIndexPage extends React.Component {
   render() {
     return (
       <Layout>
         <div
-          className="full-width-image-container margin-top-0"
+          className="full-width-image-container margin-top-0 banner-news"
           style={{
-            backgroundImage: `url('/img/banner/n95-mask.jpg')`,
+            backgroundImage: "url('/img/n95-mask.jpg')",
           }}
         >
           <h1
