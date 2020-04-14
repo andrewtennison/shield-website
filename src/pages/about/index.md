@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
 title: About our values
 ---
@@ -17,7 +17,6 @@ Who from HS participates in SHIELD:
 * Dr Kate Hammer
 * Mike McEwan
 * Dr Alisa Pearlstone (pending)
-
 
 **What we say about SHIELD**
 
