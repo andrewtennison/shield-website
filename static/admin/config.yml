@@ -49,14 +49,15 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Show donation button, name: showDonateLink, widget: boolean}
-          - {label: Donation URL, name: donateUrl, widget: string}
-          - {label: Show news, name: showNews, widget: boolean}          
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Heading", name: "heading", widget: "string"}
+          - {label: "Subheading", name: "subheading", widget: "string"}
+          - {label: "Description", name: "description", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Show donation button", name: "showDonateLink", widget: "boolean"}
+          - {label: "Donation URL", name: "donateUrl", widget: "string"}
+          - {label: "Show news", name: "showNews", widget: "boolean"}          
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

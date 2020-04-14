@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import MemberList from '../components/MemberList'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import NewsRoll from '../components/NewsRoll'
+import Content, { HTMLContent } from '../components/Content'
 
 export const IndexPageTemplate = ({
   image,
@@ -15,7 +16,12 @@ export const IndexPageTemplate = ({
   showDonateLink,
   donateUrl,
   showNews,
-}) => (
+  content,
+  contentComponent
+}) => {
+  const PageContent = contentComponent || Content
+
+  return (
   <div>
     <div class="section intro"><div className="container">
 
@@ -25,10 +31,11 @@ export const IndexPageTemplate = ({
           <h1 className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen h1">
             {heading}
           </h1>
-          <h2 className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen h2">
+          { subheading && <h2 className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen h2">
             {subheading}
-          </h2>
-          <p>{description}</p>
+          </h2>}
+          { description && <p>{description}</p>}
+          { content && <PageContent className="content" content={content} />}
           { (showDonateLink && donateUrl) && 
             <div>
               <br />
@@ -72,7 +79,7 @@ export const IndexPageTemplate = ({
     </section>
     }
   </div>
-)
+)}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -83,10 +90,14 @@ IndexPageTemplate.propTypes = {
   showDonateLink: PropTypes.bool,
   donateUrl: PropTypes.string,
   showNews: PropTypes.bool,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
 }
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  // const { frontmatter } = data.markdownRemark
+  const { markdownRemark: post } = data
+  const { frontmatter } = post
 
   return (
     <Layout>
@@ -99,17 +110,20 @@ const IndexPage = ({ data }) => {
         showDonateLink={frontmatter.showDonateLink}
         donateUrl={frontmatter.donateUrl}
         showNews={frontmatter.showNews}
+        contentComponent={HTMLContent}
+        content={post.html}
       />
     </Layout>
   )
 }
 
 IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+  data: PropTypes.object.isRequired,
+  // data: PropTypes.shape({
+  //   markdownRemark: PropTypes.shape({
+  //     frontmatter: PropTypes.object,
+  //   }),
+  // }),
 }
 
 export default IndexPage
@@ -117,6 +131,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+      html
       frontmatter {
         title
         image {
@@ -136,41 +151,3 @@ export const pageQuery = graphql`
     }
   }
 `
-
-// export const pageQuery = graphql`
-//   query IndexPageTemplate {
-//     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-//       frontmatter {
-//         title
-//         image {
-//           childImageSharp {
-//             fluid(maxWidth: 2048, quality: 100) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//         heading
-//         subheading
-//         mainpitch {
-//           title
-//           description
-//         }
-//         description
-//         intro {
-//           blurbs {
-//             image {
-//               childImageSharp {
-//                 fluid(maxWidth: 240, quality: 64) {
-//                   ...GatsbyImageSharpFluid
-//                 }
-//               }
-//             }
-//             text
-//           }
-//           heading
-//           description
-//         }
-//       }
-//     }
-//   }
-// `
