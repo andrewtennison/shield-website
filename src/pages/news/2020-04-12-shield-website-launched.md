@@ -43,6 +43,6 @@ For further information or media / spokesperson/ quote requests please contact: 
 
 ## **ABOUT SHIELD**
 
-###### (Sustainable Hub for Innovation, Execution, Launch and Distribution)
+#### (Sustainable Hub for Innovation, Execution, Launch and Distribution)
 
 SHIELD has emerged as a best-practice collaboration of independent PPE campaigns, thought leaders and industry experts. SHIELD members are united in their critical missions to provide NHS and care workers with the vital PPE that they require to do their job safely, in the midst of the COVID-19 crisis. SHIELD represents a single ‘umbrella effort’ to support any coordinated national efforts to supply PPE to the NHS and care workers.
