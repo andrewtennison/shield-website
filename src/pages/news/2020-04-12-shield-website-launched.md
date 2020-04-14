@@ -19,7 +19,6 @@ tags:
   - press release
   - ""
 ---
-
 [Download press release](/press-release/SHIELDS_Press_Release_FINAL__.pdf)
 
 **Currently for every patient being treated in an Intensive Care Unit (ICU), between 30-40 sets of PPE are needed, per day. That means, over the projected course of the COVID-19 pandemic, one ICU could use up to 9.2 million sets of PPE to protect their staff from the virus.*** SHIELD, emerging two weeks ago as a best-practice collaboration of independent PPE campaigns, came together to build supply streams in response to this need. Developing new designs for sustainable masks and visors in addition to other critical PPE on a mass scale, SHIELD’s aim is to support any coordinated national effort under one single mission to protect NHS frontline staff in the fight against COVID-19. 
@@ -42,3 +41,8 @@ To join the effort, donate materials and equipment, or to help fund any of the i
 
 For further information or media / spokesperson/ quote requests please contact: Kate Grundy [07881 454 920](<tel:07881 454 920>) / [kate@helpthemhelpus.co.uk](kate@helpthemhelpus.co.uk)
 
+
+
+**ABOUT SHIELD**(Sustainable Hub for Innovation, Execution, Launch and Distribution):
+
+SHIELD has emerged as a best-practice collaboration of independent PPE campaigns, thought leaders and industry experts. SHIELD members are united in their critical missions to provide NHS and care workers with the vital PPE that they require to do their job safely, in the midst of the COVID-19 crisis. SHIELD represents a single ‘umbrella effort’ to support any coordinated national efforts to supply PPE to the NHS and care workers.
