@@ -13,5 +13,5 @@ description: Please visit the campaign sites for more information on how we are
   donation towards the combined campaign efforts please follow the Donate Link.
 showDonateLink: true
 donateUrl: https://www.justgiving.com/crowdfunding/shield-project
-showNews: false
+showNews: true
 ---
