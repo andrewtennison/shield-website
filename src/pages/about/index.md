@@ -57,29 +57,31 @@ Who from HS participates in SHIELD:
 
 “Within SHIELD we are collaborating to develop responsive supply streams for gowns, visors, ventilator consumables and other mission-critical medical devices,” adds Dr Kate Hammer, an innovation specialist who leads on Hero Support partnerships. “We’re actively pulling in our industry contacts, from textiles to technology.”
 
+<https://nhsherosupport.co.uk/>
+
 \---
 
 ## Makerversity
 
 Makerversitywas launched in 2013, with the support of Somerset House, born out of a desire to support emerging talent, frustration about limited space for creators and the lack of opportunities for young people to get excited about careers in emergent industries. Makerversity has since grown into a vibrant, pioneering curated membership community, comprising hundreds of creative and technology entrepreneurial businesses working at the cutting edge of product design, the internet of things, architecture, software development, digital manufacturing, creative technology and toolmaking, as well as fashion, furniture and many more disciplines. Somerset House have been a key supporter of Makerversity since it began, enabling it to operate an affordable workspace for the most exciting emerging creative-tech businesses in the heart of Central London. Makerversity is now the largest resident of Somerset House Studios, a major cross-disciplinary workspace championing collaboration and experimentation. Makerversity works together with Somerset House across programming and support activities, exploring new ways of developing changing creative practices.
 
+<https://makerversity.org/makerversity-innovation-community-launch-ppe-micro-manufacturing-hub-for-nhs-workers-fighting-covid-19/>
+
 \---
 
 ## The National 3D Printing Society
 
-The National 3D Printing Society is a network originally built by three university students from Huddersfield University and Cambridge University. They started by establishing their own successful societies within their own universities and then they assisted in helping their fellow academic peers from various subjects gain access to technology that would assist in bringing their ideas to reality, promoting innovative thinking within a variety of fields and industries. They both provided and gained knowledge that helped them with the creation of a network that will assist the adoption and growth of 3D Printing technology, by providing experiences to promote collaborations. The N3DPS seeks to ensure graduates have access to, and knowledge of Additive Manufacturing (AM).N3DPS refocused its volunteers to make face shields to assist with the PPE shortage.
+The National 3D Printing Society (N3DPS) was co-founded in 2017 by three university students. ‘Project Covid-19’ was established whilst the pandemic was unfolding and the plight of PPE shortage became evident. N3DPS mobilised their community network of around 5,000 with a sign up to this effort of c.1,500 individuals and companies and established a co-ordinated manufacturing group comprising of both individual makers and larger SMEs throughout the UK to 3D print, distribute and assemble Protective Face Shields for the front line.
+
+<https://national3dprintingsociety.co.uk/medical-am-covid-19/>
 
 \---
 
 ## Helpful Engineering
 
-Helpful Engineering is an international team of 3,400 engineers working on a voluntary basis to help fight Covid 19 by designing, developing and implementing PPE and innovative medical equipment. HE are pleased to provide project management and specialist engineering support to SHIELD. You can find out more at www.helpfulengineering.org
+Helpful Engineering is an international team of 3,400 engineers working on a voluntary basis to help fight Covid 19 by designing, developing and implementing PPE and innovative medical equipment. HE are pleased to provide project management and specialist engineering support to SHIELD.  
 
-\---
-
-## NEAD
-
-The National Equipment Appeal Database (NEAD)co-ordinates the collection of civilian-held personal protective equipment (PPE) and distributes to Hospitals, GP Practices, Care Homes, all other healthcare and ancillary staff.
+<https://www.helpfulengineering.org/about-us/>
 
 \---
 
@@ -89,11 +91,15 @@ The Industry Prints is encouraging and co-ordinating architects, engineers and c
 
 The Industry Prints has formed from multi-disciplinary architecture & design practice, HTA Design, bringing together a wide range of specialisms focussed on people and places, communication and making. We know the power of collaboration and the difference that can be made when people work together, so in such extraordinary times it was important for us to work with the industry to help deliver a solution and rally those around us to do the same.
 
+<https://www.theindustryprints.co.uk/>
+
 \---
 
-## Women in 3D Printing 
+## Women in 3D Printing
 
 Women in 3D Printing is a global organization dedicated to promoting, supporting, and inspiring women who are using Additive Manufacturing technologies. Our mission is to increase the visibility of women in the Additive Manufacturing industry and encourage more women to use 3D Printing technologies.
+
+<https://womenin3dprinting.com/covid-19-3d-printing-responses/>
 
 \---
 
@@ -102,3 +108,13 @@ Women in 3D Printing is a global organization dedicated to promoting, supporting
 The Real Estate industry has always had people at its heart and this is an opportunity to come together as a community with the right resources to truly make a difference.
 
 Our industry can play its part to ensure that frontline NHS workers have the support required to endure the fight against this virus. Healthcare personnel are working tirelessly, and the expectation is that the worst is yet to come. We can help lessen the burden by providing much needed supplies, beds, and support for healthcare staff.
+
+<https://do-some-good.co.uk/>
+
+\---
+
+## NEAD
+
+The National Equipment Appeal Database (NEAD) co-ordinates the collection of civilian-held personal protective equipment (PPE) and distributes to Hospitals, GP Practices, Care Homes, all other healthcare and ancillary staff.
+
+<https://www.thenead.co.uk/>
