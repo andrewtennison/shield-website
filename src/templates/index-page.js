@@ -24,10 +24,22 @@ export const IndexPageTemplate = ({
   return (
   <div>
     <div class="section intro"><div className="container">
+      <div className="columns" style={{flexDirection: 'row-reverse'}}>
+        {/* Right col */}
+        <div className="column is-4-desktop is-6-tablet">
+          {/* <PreviewCompatibleImage imageInfo={image} /> */}
+          <div style={{position:'relative', paddingTop:'56.25%'}}>
+            <iframe 
+              style={{position:'absolute', top: 0, left:0, height: '100%', width: '100%'}}
+              src="https://www.youtube-nocookie.com/embed/Pru_LDFySvE" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
+          </div>
+        </div>
 
-      {/* Left col */}
-      <div className="columns">
-        <div className="column is-8">
+        {/* Left col */}
+        <div className="column is-8-desktop is-6-tablet">
           <h1 className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen h1">
             {heading}
           </h1>
@@ -44,10 +56,6 @@ export const IndexPageTemplate = ({
           }
         </div>
       
-        {/* Right col */}
-        <div className="column is-4 is-2-mobile is-hidden-mobile">
-          <PreviewCompatibleImage imageInfo={image} />
-        </div>
       </div></div></div>
 
     <section className="section section-partners">
