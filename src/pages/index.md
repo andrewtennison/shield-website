@@ -22,3 +22,5 @@ SHIELD is 3D printing, Injection Moulding, Textiles, and much more.
 Campaigners, Innovators, Doctors, Creative Experts, Thought Leaders, Engineers, Entrepreneurs and Architects. Supporting the national efforts.
 
 We are SHIELD.
+
+Please visit the campaign sites for more information on how we are each working to support our health professionals. If you wish to make a donation and support us in our combined campaign efforts, please follow the 'Donate' link.
