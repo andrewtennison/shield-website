@@ -31,7 +31,7 @@ export const IndexPageTemplate = ({
           <div style={{position:'relative', paddingTop:'56.25%'}}>
             <iframe 
               style={{position:'absolute', top: 0, left:0, height: '100%', width: '100%'}}
-              src="https://www.youtube-nocookie.com/embed/Pru_LDFySvE" 
+              src="https://www.youtube-nocookie.com/embed/Pru_LDFySvE?rel=0" 
               frameborder="0" 
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
               allowfullscreen></iframe>
@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
             {subheading}
           </h2>}
           { description && <p>{description}</p>}
-          { content && <PageContent className="content" content={content} />}
+          { content && <PageContent className="content" content={content} style={{marginTop: '1em'}} />}
           { (showDonateLink && donateUrl) && 
             <div>
               <br />

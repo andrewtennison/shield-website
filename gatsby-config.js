@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Shield - Bringing independent PPE campaigns together',
     description:
-      'SHIELD has emerged as a best-practice collaboration of independent PPE campaigns, thought leaders and industry experts.',
+      'Collaboration & innovation, creating, collating & supplying PPE to our healthcare workers',
   },
   plugins: [
     {
