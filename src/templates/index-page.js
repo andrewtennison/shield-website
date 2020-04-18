@@ -23,40 +23,49 @@ export const IndexPageTemplate = ({
 
   return (
   <div>
-    <div class="section intro"><div className="container">
-      <div className="columns" style={{flexDirection: 'row-reverse'}}>
-        {/* Right col */}
-        <div className="column is-4-desktop is-6-tablet">
-          {/* <PreviewCompatibleImage imageInfo={image} /> */}
-          <div style={{position:'relative', paddingTop:'56.25%'}}>
-            <iframe 
-              style={{position:'absolute', top: 0, left:0, height: '100%', width: '100%'}}
-              src="https://www.youtube-nocookie.com/embed/Pru_LDFySvE?rel=0" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen></iframe>
+    <div class="section intro">
+      <div className="container">
+        <div className="columns" style={{flexDirection: 'row-reverse'}}>
+          {/* Right col */}
+          <div className="column is-6-desktop is-6-tablet">
+            {/* <PreviewCompatibleImage imageInfo={image} /> */}
+            <div style={{position:'relative', paddingTop:'56.25%'}}>
+              <iframe 
+                style={{position:'absolute', top: 0, left:0, height: '100%', width: '100%'}}
+                src="https://www.youtube-nocookie.com/embed/Pru_LDFySvE?rel=0" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>
           </div>
+
+          {/* Left col */}
+          <div className="column is-6-desktop is-6-tablet">
+            <h1 className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen h1">
+              {heading}
+            </h1>
+            { subheading && <h2 className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen h2">
+              {subheading}
+            </h2>}
+          </div>
+        
         </div>
 
-        {/* Left col */}
-        <div className="column is-8-desktop is-6-tablet">
-          <h1 className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen h1">
-            {heading}
-          </h1>
-          { subheading && <h2 className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen h2">
-            {subheading}
-          </h2>}
-          { description && <p>{description}</p>}
-          { content && <PageContent className="content" content={content} style={{marginTop: '1em'}} />}
-          { (showDonateLink && donateUrl) && 
-            <div>
-              <br />
-              <a className="button is-info" style={{backgroundColor: '#AD29B6'}} href={donateUrl}>Donate with JustGiving</a>
+        <div className="columns" style={{paddingTop: '2em', borderTop: '2px solid rgb(0, 166, 255, .3)'}}>
+          <div className="column is-9-desktop is-12-tablet">
+            { description && <p>{description}</p>}
+            { content && <div style={{marginTop: '1em'}}><PageContent className="content" content={content} /></div>}
+            { (showDonateLink && donateUrl) && 
+              <div>
+                <br />
+                <a className="button is-info" style={{backgroundColor: '#AD29B6'}} href={donateUrl}>Donate with JustGiving</a>
+              </div>
+            }
             </div>
-          }
+
         </div>
-      
-      </div></div></div>
+      </div>
+    </div>
 
     <section className="section section-partners">
       <div className="container">
