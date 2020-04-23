@@ -5,3 +5,9 @@
 [build.environment]
   YARN_VERSION = "1.9.4"
   YARN_FLAGS = "--no-ignore-optional"
+
+[[redirect]]
+  from = "https://www.shieldproject.org"
+  to = "https://www.shieldcollaborative.org"
+  status = 301
+  force = true
