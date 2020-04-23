@@ -11,3 +11,8 @@
   to = "https://www.shieldcollaborative.org"
   status = 301
   force = true
+[[redirect]]
+  from = "https://shieldproject.org"
+  to = "https://www.shieldcollaborative.org"
+  status = 301
+  force = true
